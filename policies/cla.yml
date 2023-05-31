@@ -1,0 +1,14 @@
+name: Contributor License Agreement Policy
+description: CLA policy file
+
+resource: repository
+where:
+- |
+  !repository.name.equals("CHERIoT", StringComparison.InvariantCultureIgnoreCase)
+
+configuration: 
+   cla:
+      content: https://raw.githubusercontent.com/oobeDemo/.github/main/CLA/oobeDemo.yml
+      minimalChangeRequired: 
+         files: 2
+         codeLines: 16
